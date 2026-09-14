@@ -210,6 +210,7 @@ def test_version_readme_roadmap_sync():
         ROOT / "README.md",
         ROOT / "plugins/ed3d-orchestrate/README.md",
         ROOT / "ORCHESTRATE_BRIEF.md",
+        ROOT / "ORCHESTRATE_BRIEF.md",
     ):
         body = text(path)
         assert "gpt-6-astra" in body, f"{path}: missing Astra preference"
