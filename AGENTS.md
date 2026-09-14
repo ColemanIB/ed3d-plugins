@@ -2,6 +2,19 @@
 
 As of 2026-08-31 this repository targets GitHub Copilot CLI. New packages and all new development target Copilot CLI. Claude Code is no longer developed against or tested; the existing Claude Code plugins remain published as frozen legacy (bugfix-only at the operator's discretion). GitHub Copilot CLI reads this file as its primary instructions, so keep it authoritative and current.
 
+## Primary objective: useful, sustained completion
+
+Last verified: 2026-10-10
+
+Our orchestration goal is long-running, semi-autonomous progress toward a useful outcome that meets the agreed specification. Apply this principle both to orchestration development and to your own work in this repository. Delegation, research, verification, and bookkeeping are means, not deliverables unless requested.
+
+- **Continue within the approved scope.** Make reasonable, reversible decisions and advance unblocked work. Batch nonurgent questions. Interrupt when genuinely blocked, material requirements conflict, or an action needs authorization; uncertainty alone is not a reason to return coordination to the operator.
+- **Keep detours tied to the outcome.** Before investigating, identify the decision the answer will change and a stopping condition. Prefer the smallest useful observation. When effort grows without relevant progress, reassess the approach rather than expanding the investigation. A blocked approach is not necessarily a blocked task.
+- **Use proportionate coordination.** Keep small or tightly coupled work in the parent; use native subagents when separate context or parallel work helps. A separate reasoning context does not by itself require another CLI process.
+- **Verify fitness for the specification.** Check consequential claims and required behavior; preserve safety and approval boundaries. Avoid exhaustive assurance unrelated to the task. Do not silently lower acceptance criteria to declare success.
+
+Judge success by useful completion, sustained progress, necessary rather than habitual interruptions, and stopping low-value detours. Reports, passing tool calls, or agent activity alone do not establish completion.
+
 ## Conventions
 
 ### Consult ROADMAP.md Before Planning New Work
