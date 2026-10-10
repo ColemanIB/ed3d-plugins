@@ -44,6 +44,7 @@ Rough Idea
 | **`ed3d-hook-security-hardening`** | PreToolUse and PostToolUse hooks that catch secrets leakage patterns |
 | **`ed3d-hook-jj-git-safety`** | Copilot-only. GitHub Copilot CLI-only preToolUse hook and Agent Skill that protect jj + Git repositories from unsafe mutations and jj metadata pollution; POSIX/WSL only |
 | **`ed3d-completion-summary`** | Copilot CLI-only. sessionStart reminder hook + work-completion-summary Agent Skill for end-of-work executive handoffs. Inactive by default; explicit deployment required |
+| **[`ed3d-native-orchestration`](plugins/ed3d-native-orchestration/README.md)** | Copilot-only v0 candidate. Explicitly invoked Agent Skill for direct work, useful native delegation, and parent-owned integration. No hooks or runtime service |
 | **`ed3d-session-reflection`** | EXPERIMENTAL. Session awareness and conversation review tooling. Requires `ed3d-extending-claude` |
 | **`ed3d-orchestrate`** | EXPERIMENTAL. Polytoken-style orchestration loop for Copilot CLI: scout-sweep research, plan-review gate, builder fanout, adversarial review rounds with a stop-guardrail hook. 0.5.0 handoff gate is protocol-only (Branch B). Requires `ed3d-research-agents` + `ed3d-plan-and-execute` |
 
@@ -63,6 +64,11 @@ The historical Claude Code plugins are available from the `ed3d-plugins` marketp
 ```
 
 `ed3d-hook-jj-git-safety` is a Copilot CLI-only package and is not installed through Claude Code. Follow its plugin README for explicit Copilot hook and skill deployment. `ed3d-completion-summary` follows the same model — see its plugin README for explicit Copilot hook and skill install paths.
+
+`ed3d-native-orchestration` is a separate Copilot-only candidate, not a migration.
+Use its [file-guided entry point](plugins/ed3d-native-orchestration/README.md)
+without installation, or explicitly opt into repo-local skill discovery.
+Catalog membership does not activate it or change the existing workflow.
 
 ## Repository Structure
 

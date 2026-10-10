@@ -71,4 +71,4 @@ The top-level `version` in `.claude-plugin/marketplace.json` is bumped once per 
 
 ### Copilot-Only Packages
 
-New Copilot-targeted packages follow the `ed3d-hook-jj-git-safety` pattern: a catalog-only `.claude-plugin/plugin.json` manifest (no Claude `hooks.json` registration), explicit-deployment install docs (Copilot CLI reads them and they do not depend on Claude Code), a `copilot-only` catalog keyword, and offline POSIX tests. `ed3d-completion-summary` is the second such package.
+New Copilot-targeted packages follow the `ed3d-hook-jj-git-safety` pattern: a catalog-only `.claude-plugin/plugin.json` manifest (no Claude `hooks.json` registration), explicit-deployment install docs (Copilot CLI reads them and they do not depend on Claude Code), a `copilot-only` catalog keyword, and offline POSIX tests. `ed3d-completion-summary` is the second such package. `ed3d-native-orchestration` is a skill-only candidate using the same catalog convention; its file-guided entry point needs no installation, and repo-local skill discovery is opt-in.
